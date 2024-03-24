@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    <!-- FONTS Links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon  -->
+<link rel="shortcut icon" href="favicon-01.png" type="image/x-icon">
+
+
+    <!-- script Link  -->
+    <script src="https://kit.fontawesome.com/dae06db404.js" crossorigin="anonymous"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(hero-bg.jpg);
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6rem;
+        padding: 20px; /* Added padding for better readability on small screens */
+      }
+      .footer{
+        margin-block-start: 30px;
+        border-top: 4px solid hsl(0, 1%, 85%);
+      }
+      h4{
+        font-size: 1.3rem;
+        margin-block-end: 10px;
+      }
+      h2 {
+        color: #7a17bf;
+        font-size: 3rem;
+        line-height: 1.45;
+      }
+      .h2 {
+        margin-block-start: 4rem;
+        margin-block-end: 2rem;
+      }
+      .container {
+        display: grid;
+        place-items: center;
+      }
+      .accordion {
+    background-color: white;
+    padding: 22px;
+    margin-block: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 10px hsla(281, 82%, 29%, 0.25);
+    width: 100%;
+    max-width: 800px; /* Set a maximum width for the accordion */
+    margin-left: auto; /* Center the accordion */
+    margin-right: auto; /* Center the accordion */
+    cursor: pointer;
+}
+
+      .question {
+        color: hsl(209, 40%, 14%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .answer {
+        color: #7a17bf;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s;
+      }
+
+      .icon {
+        margin-right: 16px;
+        font-size: 1.4rem;
+        transition: transform 0.2s;
+        color: #7a17bf;
+      }
+      .icon.active {
+        transform: rotate(-180deg);
+      }
+
+      a{
+            text-decoration: none;
+            color: hsl(280, 76%, 57%);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+      /* Media Queries for Responsiveness */
+      @media only screen and (max-width: 900px) {
+        .accordion {
+          padding: 18px;
+          margin-block: 1.7rem;
+        }
+        h4{
+        font-size: 1.2rem;
+      }
+        h2 {
+          font-size: 2.5rem;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+
+        h2 {
+          font-size: 1.8rem;
+        }
+        .accordion{
+            margin-block: 1.5rem;
+        }
+      }
+
+      @media only screen and (max-width: 460px) {
+        .accordion {
+          padding: 15px;
+          margin-block: 1.3rem;
+        }
+        h4{
+        font-size: 1.1rem;
+      }
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        h2 {
+          font-size: 1.4rem;
+        }
+        h4{
+        font-size: 1rem;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="h2">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>How can I book a tour or travel package?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Booking a tour is easy! You can do it directly on our website, contact us by phone, or visit one of our partner travel agencies.
+
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>What destinations do you offer tours to?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            We offer tours to a wide range of destinations, including popular tourist spots, hidden gems, and exotic locations. Check our website for a complete list.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>What types of tours do you provide?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Our tours cater to various preferences, from cultural and adventure tours to wildlife expeditions. We also offer customized private tours for a personalized experience.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>What is included in the tour package?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Our tour packages typically include accommodation, transportation, meals, guided tours, and other amenities. Please check the specific tour details for a comprehensive list of inclusions.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>What destinations do you offer tours to?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            We offer tours to a wide range of destinations, including popular tourist spots, hidden gems, and exotic locations. Check our website for a complete list.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>Can I customize my travel itinerary?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Absolutely! We understand that everyone has unique preferences. You can customize your itinerary based on your interests, and our team will assist you in creating the perfect trip.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>What payment methods are accepted?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            We accept a variety of payment methods, including major credit cards, bank transfers, and other secure online payment gateways.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>Is travel insurance included in the package?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Travel insurance is not automatically included but can be added as an optional feature. We highly recommend considering travel insurance for added peace of mind.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>What is your cancellation policy?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Our cancellation policy varies depending on the timing of the cancellation. Please refer to our terms and conditions for detailed information on cancellation fees and refund policies.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>How can I contact you in case of an emergency during the tour?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            In case of emergencies, you can reach our dedicated emergency hotline, which is available 24/7. We also provide contact information for our local representatives at each destination.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>Do I need a visa for the destinations you offer?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Visa requirements vary by destination. We provide information and guidance on visa requirements for each tour. It's essential to check and obtain the necessary visas in advance.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>Are your tours suitable for solo travelers?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Absolutely! Our tours are designed to accommodate solo travelers. We offer a welcoming and inclusive environment, and there are options for single accommodations.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>Do you offer group discounts?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Yes, we provide group discounts for bookings with a minimum number of participants. Contact our group booking specialist for more details.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question">
+          <h4>Can I leave a review or testimonial after the tour?</h4>
+          <i class="icon fas fa-caret-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            We encourage you to share your experiences! Feel free to leave a review or testimonial on our website. Your feedback helps us improve and assists fellow travelers in making informed decisions.
+          </p>
+        </div>
+      </div>
+
+      <footer> 
+        <div class="footer">  &copy; 2024 <a href="index.html">Tourist.</a> All rights reserved.</div></footer>
+    </div>
+    <script>
+      const accordions = document.querySelectorAll(".accordion");
+
+      accordions.forEach((accordion) => {
+        const icon = accordion.querySelector(".icon");
+        const answer = accordion.querySelector(".answer");
+
+        accordion.addEventListener("click", () => {
+          if (icon.classList.contains("active")) {
+            icon.classList.remove("active");
+            answer.style.maxHeight = null;
+          } else {
+            icon.classList.add("active");
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover enchanting destinations and create lasting memories with our immersive tourist experiences. Uncover the beauty of diverse cultures, breathtaking landscapes, and iconic landmarks as you embark on a journey tailored to delight every traveler. Explore the world through our curated itineraries, expert travel tips, and unparalleled hospitality, ensuring your adventure is not just a trip but a transformative experience. Your next unforgettable vacation begins here.">
+<meta name="keywords" content="Cody Nerds, coding, web development, education, programming">
+<meta name="robots" content="index, follow">
+    <title>Tourist</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- custom css file -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="preloader.svg">
+
+<!-- Favicon  -->
+<link rel="shortcut icon" href="favicon-01.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div class="preloader" data-preloader="">
+        <div class="preloader-inner">
+            <img src="preloader.svg" width="50" height="50" class="img" alt="preloader">
+        </div>
+    </div>
+<!-- Header -->
+<header class="header" data-header>
+    <div class="container">
+        <a href="#" class="logo"  data-aos="fade-down">
+            <img src="tourist final logo-01.svg" alt="logo">
+        </a>
+        <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+                <a href="#" class="logo">
+                    <img src="tourist final logo-01.svg" alt="logo">
+                </a>
+                <button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+            </div>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link ">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="services.html" class="navbar-link">Services</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="travel-spots.html" class="navbar-link">Travel Spots</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html" class="navbar-link">About Us</a>
+                </li>
+                <a href="#contact-section" class="navbar-link">Contact Us</a>
+            </ul>
+            <div class="header-action">
+                <a href="SignIn.html" class="login-btn " target="_blank">Login</a>
+                <a href="SignIn.html" class="btn btn-primary" target="_blank">Sign Up</a>
+            </div>
+        </nav>
+        <button class="nav-toggle-btn" aria-label="open-menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+</header>
+<!-- Header END -->
+<!-- HERO -->
+<main>
+    <button id="backToTopBtn"  title="Go to top"  ><i class="fa-solid fa-arrow-up"></i> </button>
+    <article>
+        <section class="section hero bg-image" aria-label="hero" style="background-image: url(hero-bg.jpg);">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right" 
+            data-aos-duration="800">
+            <p class="hero-subtitle" data-aos="fade-right" 
+            data-aos-duration="800" data-aos-delay="100">Explore the world <img src="title-icon.svg" width="20" height="20" alt="world icon" class="img" ></p>
+            <h1 class="h1 title hero-title" data-aos="fade-right" 
+            data-aos-duration="800" data-aos-delay="400">
+                Uncover New Horizons: The World Is Yours To Explore.
+            </h1>
+            <p class="hero-text" data-aos="fade-right" 
+            data-aos-duration="800" data-aos-delay="600">We always make our customers happy by providing as many choices as possible</p>
+            <div class="wrapper" data-aos="fade-right" 
+            data-aos-duration="800">
+                <a href="SignIn.html" class="btn btn-secondary" target="_blank">
+                    <span class="span">Plan a Trip</span>
+                    <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                </a>
+                <button class="hero-btn"><div class="btn-img">
+                    <img src="giau-tran-ZMdXvd6jGww-unsplash.jpg" width="100" height="100" alt="Our story" class="img-cover">
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                </div>
+                <p class="text">Watch our Story</p>
+            </button>
+                
+            </div>
+        </div>
+        <figure class="hero-banner"  data-aos="fade-left" 
+        data-aos-duration="800" data-aos-delay="600">
+            <img src="tourist hero.png" width="631" height="735" alt="hero image" class="w-100">
+        </figure>
+        </div>
+        </section>
+<!-- HERO END -->
+        <!-- Services -->
+        <section class="section service" aria-label="service">
+            <div class="container">
+                <div class="title-wrapper"  data-aos="fade-right" data-aos-delay="100">
+                    <p class="section-subtitle">
+                        Explore the World: Unveiling Extraordinary Journeys with Tourist.
+                    </p>
+                    <h2 class="h2 title section-title">
+                        Top Ideals For You
+                    </h2> 
+                    <p class="section-text">
+                        Experience a wide selection of benefits when using our services.
+                    </p>
+                </div>
+                <div class="service-card" data-aos="fade-up"  data-aos-delay="300">
+                    <div class="card-icon">
+                        <img src="Tourist-icon-1.png" width="100" height="100" loading="lazy" alt="icon">
+                    </div>
+                    <h3 class="h3 title card-title">
+                        Diverse Range Of Choices
+                    </h3>
+                    <p class="card-text">
+                        Providing unparalleled services across a global network of 600+ diverse destinations
+                    </p>
+                </div>
+                <div class="service-card" data-aos="fade-up"  data-aos-delay="600">
+                    <div class="card-icon">
+                        <img src="icon 2-01.png" width="100" height="100" loading="lazy" alt="icon">
+                    </div>
+                    <h3 class="h3 title card-title">
+                        Customer-Service
+                    </h3>
+                    <p class="card-text">
+                        Exceeding expectations, we prioritize satisfaction with exceptional service for an extraordinary journey.
+                    </p>
+                </div>
+                <div class="service-card" data-aos="fade-up"  data-aos-delay="900">
+                    <div class="card-icon">
+                        <img src="tourist icon 3_Mesa de trabajo 1_Mesa de trabajo 1.png" width="100" height="100" loading="lazy" alt="icon">
+                    </div>
+                    <h3 class="h3 title card-title">
+                        Safety and Security
+                    </h3>
+                    <p class="card-text">
+                        At tourist, ensuring traveler well-being is paramount with our focused safety measures
+                    </p>
+                </div>
+                <div class="service-card" data-aos="fade-up"  data-aos-delay="100">
+                    <div class="card-icon">
+                        <img src="tourist-icon 2-01.png" width="100" height="100" loading="lazy" alt="icon">
+                    </div>
+                    <h3 class="h3 title card-title">
+                        Expertise
+                    </h3>
+                    <p class="card-text">
+                        Offering expert advice, insider tips, and curated travel content to guide customers.
+                    </p>
+                </div>
+                <div class="service-card" data-aos="fade-up"  data-aos-delay="300">
+                    <div class="card-icon">
+                        <img src="icon 3 innovation 3-01.png" width="100" height="100" loading="lazy" alt="icon">
+                    </div>
+                    <h3 class="h3 title card-title">
+                        Innovation
+                    </h3>
+                    <p class="card-text">
+                        Embracing new technologies and creative solutions to enhance the travel experience.
+                    </p>
+                </div>
+                <div class="service-card" data-aos="fade-up"  data-aos-delay="600">
+                    <div class="card-icon">
+                        <img src="tourist icon 4-01.png" width="100" height="100" loading="lazy" alt="icon">
+                    </div>
+                    <h3 class="h3 title card-title">
+                        Flexibility
+                    </h3>
+                    <p class="card-text">
+                        Providing options for flexible bookings, itineraries, and personalized travel plans.
+                    </p>
+                </div>
+                <div class="service-card none" data-aos="fade-up"  data-aos-delay="900">
+                    <div class="card-icon">
+                        <img src="icon 5-01.png" width="100" height="100" loading="lazy" alt="icon">
+                    </div>
+                    <h3 class="h3 title card-title">
+                        Reliability
+                    </h3>
+                    <p class="card-text">
+                        Consistently delivering on promises, providing trusted travel info for a journey built on trust and assurance
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Services End -->
+
+        <!-- Destination -->
+        <section class="section destination" aria-label="destination">
+            <div class="container">
+                <p class="section-subtitle"  data-aos="zoom-out"    data-aos-duration="600">Top-notch Travel Spots</p>
+                <h2 class="h2 title section-title"  data-aos="zoom-out"    data-aos-duration="600">Discover Top Locations</h2>
+                <ul class="destination-list">
+                    <li>
+                        <div class="destination-card" data-aos="zoom-in" >
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="hunza valley.jpg" width="600" height="650" loading="lazy" alt="Location-1" class="img-cover">
+                        <span class="card-price">160$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of Hunza Valley.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                                Hunza, Pakistan
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.9</span>
+                                <p class="rating-text">
+                                    (22.3k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="destination-card" data-aos="zoom-in" data-aos-delay="400">
+                        
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="destination-1.jpg" width="600" height="650" loading="lazy" alt="Location-1" class="img-cover">
+                        <span class="card-price">340$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of Kyoto.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                                Kyoto, Japan
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.7</span>
+                                <p class="rating-text">
+                                    (14.6k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="destination-card" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="maldives.jpg" width="600" height="650" loading="lazy" alt="Maldives" class="img-cover">
+                        <span class="card-price">560$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of Veligandu Island.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                                North Ari Atoll , Maldives
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.2</span>
+                                <p class="rating-text">
+                                    (15.8k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="destination-card" data-aos="zoom-in" data-aos="zoom-in" >
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="bangkok.jpg" width="600" height="650" loading="lazy" alt="Bangkok" class="img-cover">
+                        <span class="card-price">450$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of The Grand Palace.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                                Bangkok , Thailand
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.0</span>
+                                <p class="rating-text">
+                                    (6.1k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="destination-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="Switzerland.jpg" width="600" height="650" loading="lazy" alt="Switzerland" class="img-cover">
+                        <span class="card-price">700$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of The Kapellbrücke.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                                Lucerne , Switzerland
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.2</span>
+                                <p class="rating-text">
+                                    (8k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="destination-card" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="Singapore.jpg" width="600" height="650" loading="lazy" alt="Singapore" class="img-cover">
+                        <span class="card-price">350$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of The Super Tree Grove.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                            Gardens Bay, Singapore
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.0</span>
+                                <p class="rating-text">
+                                    (10k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="destination-card" data-aos="zoom-in">
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="turkey.jpg" width="600" height="650" loading="lazy" alt="Turkey" class="img-cover">
+                        <span class="card-price">400$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of The Şanlıurfa Batık Şehir.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                                Halfeti, Turkey
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.4</span>
+                                <p class="rating-text">
+                                    (18k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="destination-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="Italy.jpg" width="600" height="650" loading="lazy" alt="Italy" class="img-cover">
+                        <span class="card-price">700$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of The Costiera Amalfitana.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                                
+                               Amalfi, SA, Italy
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.2</span>
+                                <p class="rating-text">
+                                    (5.5k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="destination-card" id="destination" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="Dubai.jpg" width="600" height="650" loading="lazy" alt="Dubai" class="img-cover">
+                        <span class="card-price">270$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of Burj Khalifa.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                                
+                               
+                            Dubai, United Arab Emirates
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.7</span>
+                                <p class="rating-text">
+                                    (20k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="destination-card" data-aos="zoom-in">
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="Paris.jpg" width="600" height="650" loading="lazy" alt="France" class="img-cover">
+                        <span class="card-price">850$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of Eiffel Tower.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                                
+                               
+                            Paris, France
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.0</span>
+                                <p class="rating-text">
+                                    (8k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="destination-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="Germany.jpg" width="600" height="650" loading="lazy" alt="Germany" class="img-cover">
+                        <span class="card-price">750$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of Neuschwanstein Castle.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                            
+                                Schwangau, Germany
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.4</span>
+                                <p class="rating-text">
+                                    (14k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="destination-card" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                        <img src="china.jpg" width="600" height="650" loading="lazy" alt="China" class="img-cover">
+                        <span class="card-price">450$</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">
+                                    Discover the aesthetic splendor of The Great Wall of China.
+                                </a>
+                            </h3>
+                            <address class="card-text">
+                                
+                               
+                                Beijing, China
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.5</span>
+                                <p class="rating-text">
+                                    (18k reviews)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+                <button id="loadMoreBtn" class="btn btn-primary btn-animation">View All Travel Spots</button>
+            </div>
+        </section>
+        <!-- Destination End -->
+        <!-- Experience -->
+        <section class="section experience" aria-label="experience">
+            <div class="container">
+                <div class="experience-content" data-aos="fade-left" 
+                data-aos-duration="1000">
+                    <p class="section-subtitle" >
+                        Explorer's Log
+                    </p>
+                    <h2 class="h2 title section-title">Committed to Your Satisfaction: Guided by Experience</h2>
+                    <p class="section-text">
+                        At <span><a href="#">tourist</a></span> , Years of experience, dedicated to your happiness. We're here to make your journey with us enjoyable and satisfying. Your contentment is our priority.Experience the joy of seamless satisfaction with us your happiness, our commitment.
+                    </p>
+                    <ul class="experience-list">
+                        <li class="experience-item" data-aos="fade-up" 
+                        data-aos-duration="800"   data-aos-delay="100"
+                        >
+                            <h3 class="h3 title item-title">
+                                30+
+                            </h3>
+                            <p class="item-text">
+                                Years <br>
+                                Experience
+                            </p>
+                        </li>
+                        <li class="experience-item" data-aos="fade-up" 
+                        data-aos-duration="800"   data-aos-delay="400">
+                            <h3 class="h3 title item-title">
+                                600+
+                            </h3>
+                            <p class="item-text">
+                                Travel <br>
+                                Spots
+                            </p>
+                        </li>
+                        <li class="experience-item" data-aos="fade-up" 
+                        data-aos-duration="800"
+                        data-aos-delay="800">
+                            <h3 class="h3 title item-title">
+                                150k+
+                            </h3>
+                            <p class="item-text">
+                                Positive <br>
+                                Reviews
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <figure class="experience-banner" data-aos="fade-right" 
+                data-aos-duration="1000">
+                    <img src="experience section.png" width="550" height="760" loading="lazy" alt="experience" class="w-100">
+                    <img src="exp-shape-01.svg" width="75" height="109" loading="lazy" alt="Experience badge" class="exp-shape">
+                </figure>
+               
+            </div>
+        </section>
+        <!-- Experience End -->
+        <!-- Image Gallery -->
+       <section class="section gallery" aria-label="gallery">
+<div class="container">
+    <p class="section-subtitle" data-aos="zoom-out"    data-aos-duration="600"   data-aos-delay="100">
+        Journey Moments
+    </p>
+    <h2 class="h2 title section-title" data-aos="zoom-out"    data-aos-duration="600"   data-aos-delay="100">Voyager's Captured Moments</h2>
+    <ul class="gallery-list"  data-aos="zoom-in"    data-aos-duration="600"   data-aos-delay="200">
+        <li class="gallery-item">
+            <figure class="item-banner img-holder" style= "--width:700; --height:925;">
+                <img src="gallery 1 updated.jpg" width="700" height="925" loading="lazy" alt="gallery" class="img-cover">
+            </figure>
+        </li>
+        <li class="gallery-item">
+            <figure class="item-banner img-holder" style="--width:700; --height:925;">
+<img src="gallery  2 updated.jpg" width="700" height="925" loading="lazy" alt="gallery" class="img-cover">
+            </figure>
+        </li>
+        <li class="gallery-item">
+            <figure class="item-banner img-holder" style= "--width:700; --height:925;">
+<img src="gallery 3 updated.jpg" width="700" height="925" loading="lazy" alt="gallery" class="img-cover">
+            </figure>
+        </li>
+        <li class="gallery-item">
+            <figure class="item-banner img-holder" style= "--width:700; --height:378;">
+<img src="gallery 4 updated.jpg" width="700" height="378" loading="lazy" alt="gallery" class="img-cover">
+            </figure>
+        </li>
+        <li class="gallery-item">
+            <figure class="item-banner img-holder" style= "--width:700; --height:378;">
+<img src="gallery 5 updated.jpg" width="700" height="378" loading="lazy" alt="gallery" class="img-cover">
+            </figure>
+        </li>
+        <li class="gallery-item">
+            <figure class="item-banner img-holder" style= "--width:700; --height:378;">
+<img src="gallery 6 updated.jpg" width="700" height="378" loading="lazy" alt="gallery" class="img-cover">
+            </figure>
+        </li>
+    </ul>
+</div>
+</section>
+        <!-- Image Gallery End -->
+<!-- CTA -->
+<section class="section connect"  data-aos="fade-up"    data-aos-duration="600"  data-aos-delay="200" aria-label="connect">
+    <div class="container">
+        <div class="connect-card has-bg-image" style="background-image: url(Connect-bg.jpg);">
+        <h2 class="h2 title section-title">Ready yourself for the beauty that awaits.
+            <img src="title-icon.svg" alt="icon" class="img" width="36" height="36" loading="lazy">
+        </h2>
+        <p class="section-text">
+            Take advantage of your personalized offers</p>
+            <a href="SignIn.html" class="btn btn-primary btn-animation" target="_blank">Get Started</a>
+    </div>
+    </div>
+</section>
+<!-- CTA END -->
+    </article>
+</main>
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand" data-aos="fade-right">
+                <a href="#" class="logo">
+                    <img src="tourist final logo-01.svg" width="187" height="38" alt="logo">
+                </a>
+                <p class="footer-text">
+                    We keep customers happy with plenty of choices that suit their needs.
+                </p>
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.instagram.com/anasfarooq44/" class="social-link" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/anas.farooq.965928" class="social-link" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/TtNDRGsN" class="social-link" target="_blank">
+                            <ion-icon name="logo-discord"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/hitmananas" class="social-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">
+                        About
+                    </p>
+                </li>
+                <li>
+                    <a href="index.html" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="services.html" class="footer-link">Services</a>
+                </li>
+                <li>
+                    <a href="travel-spots.html" class="footer-link">Travel Spots</a>
+                </li>
+                <li>
+                    <a href="about.html " class="footer-link">About Us</a>
+                </li>
+                <li>
+                    <a href="#contact-section" class="footer-link">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">
+                        Tourist.
+                    </p>
+                </li>
+                <li>
+                    <a href="#contact-section" class="footer-link">Partner With Us</a>
+                </li>
+                <li>
+                    <a href="accordion.html" class="footer-link">FAQs</a>
+                </li>
+                <li>
+                    <a href="#contact-section" class="footer-link">Blogs</a>
+                </li>
+                <li>
+                    <a href="#contact-section" id="contact-link"  class="footer-link">Contact Us</a>
+                </li>
+                <li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">
+                        Support
+                    </p>
+                </li>
+                <li>
+                    <a href="#contact-section" class="footer-link">24/7 Customer Support</a>
+                </li>
+                <li>
+                    <a href="SignIn.html" class="footer-link">Account</a>
+                </li>
+                <li>
+                    <a href="##contact-section" class="footer-link">Feedback</a>
+                </li>
+                <li>
+                    <a href="##contact-section" class="footer-link">Availability</a>
+                </li>
+                <li>
+                    <a href="#contact-section" id="contact-link"  class="footer-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="footer-list " id="contact-section" data-aos="fade-left">
+                <p class="footer-list-title">
+                    Get In Touch
+                </p>
+                <p class="footer-text">
+                    Your questions or feedbacks are important to us
+                </p>
+                <form action="https://formspree.io/f/xkndrwkr" method="POST" class="input-wrapper">
+                    <input type="email" name="email" id="email-input" placeholder="Email Address" autocomplete="off" required class="input-field">
+                    <button type="submit" class="input-btn" aria-label="Send a message">
+                        <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright" >
+                Copyright 2023. Made by <a href="https://www.facebook.com/anas.farooq.965928" class="copyright-link" target="_blank">Tourist.</a>
+            </p>
+            <ul class="footer-bottom-list">
+                <li>
+                <a href="terms.html" target="_blank" class="footer-bottom-link">
+                Terms and Conditions
+                </a>
+            </li>
+                <li>
+                <a href="privacy-policy.html" target="_blank" class="footer-bottom-link">
+                Privacy and Policy
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+    <!-- custom js link -->
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover enchanting destinations and create lasting memories with our immersive tourist experiences. Uncover the beauty of diverse cultures, breathtaking landscapes, and iconic landmarks as you embark on a journey tailored to delight every traveler. Explore the world through our curated itineraries, expert travel tips, and unparalleled hospitality, ensuring your adventure is not just a trip but a transformative experience. Your next unforgettable vacation begins here.">
+    <meta name="keywords" content="Cody Nerds, coding, web development, education, programming">
+    <meta name="robots" content="index, follow">
+    <title>Tourist</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- custom css file -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="full-shot-travel-concept-with-landmarks.jpg">
+<link rel="preload" as="image" href="preloader.svg">
+
+<!-- Favicon  -->
+<link rel="shortcut icon" href="favicon-01.png" type="image/x-icon">
+</head>
+<body class="other-page">
+    <!-- Preloader -->
+    <div class="preloader" data-preloader="">
+        <div class="preloader-inner">
+            <img src="preloader.svg" width="50" height="50" class="img" alt="preloader">
+        </div>
+    </div>
+<!-- Header -->
+<header class="header" data-header>
+    <div class="container">
+        <a href="#" class="logo"  data-aos="fade-down">
+            <img src="tourist final logo-01.svg" alt="logo">
+        </a>
+        <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+                <a href="#" class="logo">
+                    <img src="tourist final logo-01.svg" alt="logo">
+                </a>
+                <button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+            </div>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link ">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="services.html" class="navbar-link">Services</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="travel-spots.html" class="navbar-link">Travel Spots</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html" class="navbar-link">About Us</a>
+                </li>
+                <a href="#contact-section" id="contact-link" class="navbar-link">Contact Us</a>
+            </ul>
+            <div class="header-action">
+                <a href="SignIn.html" class="login-btn " target="_blank">Login</a>
+                <a href="SignIn.html" class="btn btn-primary" target="_blank">Sign Up</a>
+            </div>
+        </nav>
+        <button class="nav-toggle-btn" aria-label="open-menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+</header>
+<!-- Header END -->
+        <!-- Experience -->
+        <section class="section experience" aria-label="experience">
+            <div class="container">
+                <div class="experience-content" data-aos="fade-left" 
+                data-aos-duration="1000">
+                    <p class="section-subtitle" >
+                        Explorer's Log
+                    </p>
+                    <h2 class="h2 title section-title">Committed to Your Satisfaction: Guided by Experience</h2>
+                    <p class="section-text">
+                        At <span><a href="#">tourist</a></span> , Years of experience, dedicated to your happiness. We're here to make your journey with us enjoyable and satisfying. Your contentment is our priority.Experience the joy of seamless satisfaction with us your happiness, our commitment.
+                    </p>
+                    <ul class="experience-list">
+                        <li class="experience-item" data-aos="fade-up" 
+                        data-aos-duration="800"   data-aos-delay="100"
+                        >
+                            <h3 class="h3 title item-title">
+                                30+
+                            </h3>
+                            <p class="item-text">
+                                Years <br>
+                                Experience
+                            </p>
+                        </li>
+                        <li class="experience-item" data-aos="fade-up" 
+                        data-aos-duration="800"   data-aos-delay="400">
+                            <h3 class="h3 title item-title">
+                                600+
+                            </h3>
+                            <p class="item-text">
+                                Travel <br>
+                                Spots
+                            </p>
+                        </li>
+                        <li class="experience-item" data-aos="fade-up" 
+                        data-aos-duration="800"
+                        data-aos-delay="800">
+                            <h3 class="h3 title item-title">
+                                150k+
+                            </h3>
+                            <p class="item-text">
+                                Positive <br>
+                                Reviews
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <figure class="experience-banner services-section" data-aos="fade-right" 
+                data-aos-duration="1000">
+                    <img src="experience section.png" width="550" height="760" loading="lazy" alt="experience" class="w-100">
+                    <img src="exp-shape-01.svg" width="75" height="109" loading="lazy" alt="Experience badge" class="exp-shape">
+                </figure>
+               
+            </div>
+        </section>
+        <!-- Experience End -->
+        <!-- Image Gallery -->
+       <section class="section gallery" aria-label="gallery">
+        <div class="container">
+            <p class="section-subtitle" data-aos="zoom-out"    data-aos-duration="600"   data-aos-delay="100">
+                Journey Moments
+            </p>
+            <h2 class="h2 title section-title" data-aos="zoom-out"    data-aos-duration="600"   data-aos-delay="100">Voyager's Captured Moments</h2>
+            <ul class="gallery-list"  data-aos="zoom-in"    data-aos-duration="600"   data-aos-delay="200">
+                <li class="gallery-item">
+                    <figure class="item-banner img-holder" style= "--width:700; --height:925;">
+                        <img src="gallery 1 updated.jpg" width="700" height="925" loading="lazy" alt="gallery" class="img-cover">
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure class="item-banner img-holder" style="--width:700; --height:925;">
+        <img src="gallery  2 updated.jpg" width="700" height="925" loading="lazy" alt="gallery" class="img-cover">
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure class="item-banner img-holder" style= "--width:700; --height:925;">
+        <img src="gallery 3 updated.jpg" width="700" height="925" loading="lazy" alt="gallery" class="img-cover">
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure class="item-banner img-holder" style= "--width:700; --height:378;">
+        <img src="gallery 4 updated.jpg" width="700" height="378" loading="lazy" alt="gallery" class="img-cover">
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure class="item-banner img-holder" style= "--width:700; --height:378;">
+        <img src="gallery 5 updated.jpg" width="700" height="378" loading="lazy" alt="gallery" class="img-cover">
+                    </figure>
+                </li>
+                <li class="gallery-item">
+                    <figure class="item-banner img-holder" style= "--width:700; --height:378;">
+        <img src="gallery 6 updated.jpg" width="700" height="378" loading="lazy" alt="gallery" class="img-cover">
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        </section>
+                <!-- Image Gallery End -->
+<!-- CTA -->
+<section class="section connect"  data-aos="fade-up"    data-aos-duration="600"  data-aos-delay="200" aria-label="connect">
+    <div class="container">
+        <div class="connect-card has-bg-image" style="background-image: url(Connect-bg.jpg);">
+        <h2 class="h2 title section-title">Ready yourself for the beauty that awaits.
+            <img src="title-icon.svg" alt="icon" class="img" width="36" height="36" loading="lazy">
+        </h2>
+        <p class="section-text">
+            Take advantage of your personalized offers</p>
+            <a href="SignIn.html" class="btn btn-primary btn-animation" target="_blank">Get Started</a>
+    </div>
+    </div>
+</section>
+<!-- CTA END -->
+                <!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand" data-aos="fade-right">
+                <a href="#" class="logo">
+                    <img src="tourist final logo-01.svg" width="187" height="38" alt="logo">
+                </a>
+                <p class="footer-text">
+                    We keep customers happy with plenty of choices that suit their needs.
+                </p>
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.instagram.com/anasfarooq44/" class="social-link" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/anas.farooq.965928" class="social-link" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/TtNDRGsN" class="social-link" target="_blank">
+                            <ion-icon name="logo-discord"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/hitmananas" class="social-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">
+                        About
+                    </p>
+                </li>
+                <li>
+                    <a href="index.html" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="services.html" class="footer-link">Services</a>
+                </li>
+                <li>
+                    <a href="travel-spots.html" class="footer-link">Travel Spots</a>
+                </li>
+                <li>
+                    <a href="about.html
+                    " class="footer-link">About Us</a>
+                </li>
+                <li>
+                    <a href="#contact-section" class="footer-link">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">
+                        Tourist.
+                    </p>
+                </li>
+                <li>
+                    <a href="#contact-section" class="footer-link">Partner With Us</a>
+                </li>
+                <li>
+                    <a href="accordion.html" class="footer-link">FAQs</a>
+                </li>
+                <li>
+                    <a href="#contact-section" class="footer-link">Blogs</a>
+                </li>
+                <li>
+                    <a href="#contact-section" id="contact-link"  class="footer-link">Contact Us</a>
+                </li>
+                <li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">
+                        Support
+                    </p>
+                </li>
+                <li>
+                    <a href="#contact-section" class="footer-link">24/7 Customer Support</a>
+                </li>
+                <li>
+                    <a href="#contact-section" class="footer-link">Account</a>
+                </li>
+                <li>
+                    <a href="##contact-section" class="footer-link">Feedback</a>
+                </li>
+                <li>
+                    <a href="##contact-section" class="footer-link">Availability</a>
+                </li>
+                <li>
+                    <a href="#contact-section" id="contact-link"  class="footer-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="footer-list " id="contact-section" data-aos="fade-left">
+                <p class="footer-list-title">
+                    Get In Touch
+                </p>
+                <p class="footer-text">
+                    Your questions or feedbacks are important to us
+                </p>
+                <form action="https://formspree.io/f/xkndrwkr" method="POST" class="input-wrapper">
+                    <input type="email" name="email" id="email-input" placeholder="Email Address" autocomplete="off" required class="input-field">
+                    <button type="submit" class="input-btn" aria-label="Send a message">
+                        <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright" >
+                Copyright 2023. Made by <a href="https://www.facebook.com/anas.farooq.965928" class="copyright-link" target="_blank">Tourist.</a>
+            </p>
+            <ul class="footer-bottom-list">
+                <li>
+                <a href="terms.html" target="_blank" class="footer-bottom-link">
+                Terms and Conditions
+                </a>
+            </li>
+                <li>
+                <a href="privacy-policy.html" target="_blank" class="footer-bottom-link">
+                Privacy and Policy
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+    <!-- custom js link -->
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
